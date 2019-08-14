@@ -12,7 +12,7 @@
 For this lab you will
 
 - [x] write SQL statements against a pre-populated database using an online tool. Once you have the correct SQL Statement for each query, write it inside the queries.md file under the appropriate heading.
-- [ ] write the db helper methods for the `schemes` resource in `./schemes/scheme-model.js`
+- [x] write the db helper methods for the `schemes` resource in `./schemes/scheme-model.js`
 
 ### Multi Table Queries
 
@@ -27,26 +27,26 @@ Visit [SQL Try Editor at W3Schools.com](https://www.w3schools.com/Sql/tryit.asp?
 
 Write helpers methods in `./schemes/scheme-model.js` that match the following specifications:
 
-- [ ] `find()`:
+- [x] `find()`:
   - Calling find returns a promise that resolves to an array of all schemes in the database.
   - No steps are included.
-- [ ] `findById(id)`:
+- [x] `findById(id)`:
   - Expects a scheme `id` as its only parameter.
   - Resolve to a single scheme object.
   - On an invalid `id`, resolves to `null`.
-- [ ] `findSteps(id)`:
+- [x] `findSteps(id)`:
   - Expects a scheme `id`.
   - Resolves to an array of all correctly ordered step for the given scheme: `[ { id: 17, scheme_name: 'Find the Holy Grail', step_number: 1, instructions: 'quest'}, { id: 18, scheme_name: 'Find the Holy Grail', step_number: 2, instructions: '...and quest'}, etc. ]`.
   - This array should include the `scheme_name` _not_ the `scheme_id`.
-- [ ] `add(scheme)`:
+- [x] `add(scheme)`:
   - Expects a scheme object.
   - Inserts scheme into the database.
   - Resolves to the newly inserted scheme, including `id`.
-- [ ] `update(changes, id)`:
+- [x] `update(changes, id)`:
   - Expects a changes object and an `id`.
   - Updates the scheme with the given id.
   - Resolves to the newly updated scheme object.
-- [ ] `remove(id)`:
+- [x] `remove(id)`:
   - Removes the scheme object with the provided id.
   - Resolves to the removed scheme
   - Resolves to `null` on an invalid id.
@@ -85,5 +85,5 @@ The following endpoints are available to test the functionality of the model met
   - [x] Displays CategoryName and a new column called Count that shows how many products are in each category. Shows 9 records.
   - [x] Display OrderID and a column called ItemCount that shows the total number of products placed on the order. Shows 196 records.
 - Add the following method to your API
-  - [ ] `addStep(step, scheme_id)`: This method expects a step object and a scheme id. It inserts the new step into the database, correctly linking it to the intended scheme.
+  - [x] `addStep(step, scheme_id)`: This method expects a step object and a scheme id. It inserts the new step into the database, correctly linking it to the intended scheme.
   - You may use `POST /api/schemes/:id/addStep` to test this method.
