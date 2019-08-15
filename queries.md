@@ -42,6 +42,7 @@ SELECT
   E.LastName AS "Employee's Last Name"
 FROM Orders AS O
 JOIN Customers AS C ON O.CustomerID = C.CustomerID
+JOIN Employees AS E ON O.EmployeeID = E.EmployeeID;
 ```
 
 ---
